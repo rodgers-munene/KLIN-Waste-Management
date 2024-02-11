@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, black, darkgreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* login page */
+p{
+    color: grey;
+}
+.login-container{
+    width: 400px;
+    height: 95vh;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+.greeting, .welcome-txt{
+    text-align: center;
+    margin: 20px;
+}
+.name, .pass{
+    margin: 40px auto;
+    position: relative;
+}
+input{  
+    padding: 5px 5px 5px 20px;
+    width: 100%;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    outline: none;
+    transition: 0.3s;
+}
+i{
+    position: absolute;
+    top: 21px;
+    color: grey;
+}
+.forgot{
+    float: right;
+    text-decoration: none;
+    color: gray;
+}
+.btn button{
+    margin: 20px auto;
+    width: 100%;
+    height: 35px;
+    border-radius:15px;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    background: linear-gradient(180deg, black, darkgreen);
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.01);
+}
+.alternatives{
+    text-align: center;
+    
+}
+.alternatives p{ 
+    margin: 10px auto;
+}
+/* sign-up page */
+.signup-container{
+    width: 400px;
+    height: 95vh;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+.signup-container .name,.signup-container .email, 
+.signup-container .first-psswd, .signup-container .second-psswd{
+    position: relative;
+    margin: 30px auto;
+}
+.signup-container .btn button{
+    margin: 5px auto;
+}
+
+.socials{
+    width: 100%;
+    text-align: center;    
+}
+.socials i{
+    position: unset;
+    color: blue;
+    font-size: 20px;
+    margin: auto 5px;
+}
