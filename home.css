@@ -90,4 +90,104 @@ button{
     align-items: center;
 }
 
+.billing{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+.my-klin{
+    position: relative;
+    width: 75%;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+.my-klin .btn{
+    position: absolute;
+    right: 30px;
+    top: 60px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+.my-klin h1{
+    font-weight: 700;
+    font-size: 55px;
+    color: darkgreen;
+}
+.my-klin p{
+    font-size: 18px;
+}
+.process{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 170px;
+    background-color: #fff;
+    right: 0;
+}
+.process div{
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+.process div .fa{
+    font-size: 25px;
+    font-weight: 700;
+    color: darkgreen;
+}
+.process div h4{
+    font-weight: 700;
+}
+
+
+.educate{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightgray;
+}
+.educate-txt{
+    width: 500px;
+}
+.educate-txt h1{
+    color: darkgreen;
+    font-size: 55px;
+    font-weight: 700;
+}
+.educate-txt p{
+    font-size: 18px;
+}
+.educate-txt .btn{
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.help{
+    width: 100%;
+    height: 220px;
+    text-align: center;
+    background-color: rgb(245, 245, 245);
+    margin-top: -20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.help p, .help .btn{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.help .btn{
+    padding: 10px;
+    border-radius: 20px;
+}
 
