@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+.nav-bar{
+    width: 100%;
+    height: 55px;
+    background-color: darkolivegreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 17px;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+button{
+    padding: 4px 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: blue;
+    color: white;
+}
+
+.logo img{
+   padding: 5px 10px;
+}
+
+main {
+    padding: 30px;
+}
+.top{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+
+}
+
+.track-pickup {
+    max-width: 600px;
+    margin: 0 auto;
+    position: fixed;
+}
+
+.track-pickup h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.pickup-details form {
+    margin-bottom: 250px;
+}
+
+.pickup-details label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.pickup-details input[type="text"],
+.pickup-details input[type="date"],
+.pickup-details button {
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+.pickup-details input[type="date"] {
+    width: 200px;
+}
+
+.pickup-details button {
+    background-color:darkolivegreen;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer ul li:last-child {
+    margin-right: 0;
+}
+.intro{
+    position: absolute;
+    right: 0;
+}
+

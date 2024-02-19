@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Pickup</Track-Pickup></title>
+    <link rel="stylesheet" href="track.css">
+</head>
+<body>
+    <header>
+    <nav class="nav-bar">
+        <div class="logo">
+        <img src="./assets\LOGO.png">
+        </div>
+        <div class="nav-menu">
+            <a href="home">Home</a>
+            <a href="schedulepickup">Schedule Pickup</a>
+            <a href="Trackpickup" class="active">Track Pickup</a>
+            <a href="Er">Educational Resources</a>
+            <a href="report">Report</a>
+            <a href="About">About Us</a>
+            <button>Login</button>
+        </div>         
+    </nav>
+</header>
+<div>
+    <img src="./assets/Plastic Odyssey - Plastic Waste & Renewable Energy.jpeg">
+</div>
+
+<div class="top">
+<main>
+    <h1>TALKING TRASH</h1>
+    <p>How To Sort Your Waste!</p>
+    <section class="track-pickup">
+        <h1>Track Pickup</h1>
+        <div class="pickup-details">
+            <form>
+                <label for="pickup-id">Pickup ID:</label>
+                <input type="text" id="pickup-id" name="pickup-id">
+                <label for="date-range">Date Range:</label>
+                <input type="date" id="start-date" name="start-date">
+                <span>to</span>
+                <input type="date" id="end-date" name="end-date">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <div class="pickup-status">
+            <!-- Pickup status information will be displayed here dynamically -->
+        </div>
+        <div class="pickup-history">
+            <!-- Pickup history will be displayed here dynamically -->
+        </div>
+    </section>
+</main>
+</div>
+
+<footer>
+    <ul>
+        <li><a href="#">Company Info</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+    </ul>
+</footer>
+    
+</body>
+</html>
