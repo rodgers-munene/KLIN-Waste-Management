@@ -41,12 +41,17 @@ button{
 }
 
 main {
-    padding: 30px;
-}
-.top{
+    padding: 0px;
     display: flex;
     justify-content: center;    
     align-items: center;
+    margin-top: 20px;
+}
+.top{
+    display: inline;
+    justify-content: center;    
+    align-items: center;
+    margin-top: 55px;
 
 }
 
@@ -112,8 +117,6 @@ footer ul li {
 footer ul li:last-child {
     margin-right: 0;
 }
-.intro{
-    position: absolute;
-    right: 0;
-}
+
+
 
