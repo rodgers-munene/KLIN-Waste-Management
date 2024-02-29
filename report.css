@@ -7,6 +7,25 @@
     font-family: 'outfit';
     background: linear-gradient(#ffdad5,#fff7f9)
 }
+.nav-bar{
+    width: 100%;
+    height: 55px;
+    background-color: darkolivegreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 17px;
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
 .report-container{
     height: 100vh;
     display: flex;

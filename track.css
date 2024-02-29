@@ -82,9 +82,6 @@ main{
     padding: 15px;    
 }
 
-.right h1{
-    margin: 5px auto;
-}
 .pickup-btn{
     float: right;
     margin-top: 5px;
@@ -210,8 +207,6 @@ textarea{
 #btn1{
     background-color: lightgray;
 }
-
-
 
 /* footer */
 

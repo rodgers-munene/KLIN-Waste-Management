@@ -7,6 +7,18 @@
     <link rel="stylesheet" type="text/css" href="About.css">
 </head>
 <body>
+  <nav class="nav-bar">
+    <div class="logo"></div>
+
+    <div class="nav-menu">
+        <a href="home">Home</a>
+        <a href="schedulepickup">Schedule Pickup</a>
+        <a href="Trackpickup">Track Pickup</a>
+        <a href="Er">Educational Resources</a>
+        <a href="report">Report</a>
+        <a href="About">About Us</a>
+    </div>         
+</nav>
   <section class="about">
     <div class="main">
         <img src="assets/LOGO.png" alt="logo">
@@ -27,17 +39,35 @@
     
   </section>
  <section class="vision">
-  <div class="vision-text">
-    <h1>Our vision</h1>
-    <p>At KLIN we envision a world 
-      where waste is not seen as a problem but as a
-      valuable resource waiting to be repurposed.
-       Our mission is to transform waste management 
-       into an efficient, eco-friendly, and community-driven
-       process that contributes to a healthier planet.</p>
-       <img src="assets/zibik-iR4mClggzEU-unsplash.jpg" alt="">
+  <div class="main2">
+    <img src="assets/zibik-iR4mClggzEU-unsplash.jpg" alt="">
+    <div class="vision-text">
+      <h1>Our vision</h1>
+      <p>At KLIN we envision a world 
+        where waste is not seen as a problem but as a
+        valuable resource waiting to be repurposed.
+         Our mission is to transform waste management 
+         into an efficient, eco-friendly, and community-driven
+         process that contributes to a healthier planet.</p>
+         
+    </div>
   </div>
   
  </section>
+<div class="contact-container">
+  <form action="" class="contact-left">
+    <div class="contact">
+      <h1>contact us</h1>
+      <input type="text" name="name" placeholder="Enter your Name" class="contact-input" required><br>
+      <input type="email" name="email" placeholder="Enter your email" class="contact-input" required><br>
+      <input type="date" name="date" placeholder="" class="contact-input" required><br>
+      <textarea name="message" id="message" placeholder="Enter your message" cols="30" rows="10"></textarea><br>
+      <button type="submit">submit</button>
+    
+    </div>
+  </form>
+</div>
+
+
 </body>
 </html>
