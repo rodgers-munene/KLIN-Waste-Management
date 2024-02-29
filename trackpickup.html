@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Track Pickup</Track-Pickup></title>
+    <title>Track Your Pickup</title>
     <link rel="stylesheet" href="track.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <header>
     <nav class="nav-bar">
         <div class="logo">
-        <img src="./assets\LOGO.png">
+        <a href="index.php"><img src="./assets\LOGO.png"></a>
         </div>
         <div class="nav-menu">
             <a href="home">Home</a>
@@ -23,45 +25,168 @@
         </div>         
     </nav>
 </header>
-<div>
-    <img src="./assets/Plastic Odyssey - Plastic Waste & Renewable Energy.jpeg">
-</div>
 
-<div class="top">
 <main>
-    <h1>TALKING TRASH</h1>
-    <p>How To Sort Your Waste!</p>
-    <section class="track-pickup">
-        <h1>Track Pickup</h1>
-        <div class="pickup-details">
-            <form>
-                <label for="pickup-id">Pickup ID:</label>
-                <input type="text" id="pickup-id" name="pickup-id">
-                <label for="date-range">Date Range:</label>
-                <input type="date" id="start-date" name="start-date">
-                <span>to</span>
-                <input type="date" id="end-date" name="end-date">
-                <button type="submit">Search</button>
-            </form>
-        </div>
-        <div class="pickup-status">
-            <!-- Pickup status information will be displayed here dynamically -->
-        </div>
-        <div class="pickup-history">
-            <!-- Pickup history will be displayed here dynamically -->
-        </div>
-    </section>
-</main>
-</div>
+    <div class="left">
+        <h3>Pickups</h3>
+        <p>Manage your pickups</p>
 
+        <div>
+            <button id="btn1">Overview</button><br>
+            <button id="btn2">Pickups</button><br>
+            <button id="btn3">Help</button><br>
+        </div>
+    </div>
+    <div class="right">
+        <div class="overview">
+                <h1>Good Morning, Sarah</h1>
+                <p class="state"> Your next pickups</p>
+
+                <div class="details"><i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <div>
+                        <p class="date">Tomorrow</p>
+                        <p class="status">In progress</p>
+                        <p class="waste-type">Mixed Recycling</p>
+                    </div>
+                </div>
+                <div class="details">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <div>
+                        <p class="date">Monday, March 4</p>
+                        <p class="status">scheduled</p>
+                        <p class="waste-type">Yard Waste</p>
+                    </div>
+                </div>
+                <div class="details">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <div>
+                        <p class="date">Wednesday, March 6</p>
+                        <p class="status">Not scheduled</p>
+                        <p class="waste-type">Compost</p>
+                    </div>
+                </div>
+        </div>
+        <div class="pickups">
+            <button class="pickup-btn">Schedule a pickup</button>
+            <h1>Pickups</h1>
+            
+
+            <div class="upcoming">
+                <h2>Upcoming</h2>
+                <div>
+                    <h4 class="title">Mixed Recycling</h4>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <p class="components">Plastic, Glass, Metal, Paper, Cardboard</p>
+                    
+                </div>
+                <div>
+                    <h4 class="title">Compost</h4>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <p class="components">Organics, Food scraps, Yard Waste</p>
+                    
+                </div>
+                <div>
+                    <h4 class="title">Trash</h4>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <p class="components">Landfill Waste</p>
+                    
+                </div>
+            </div>
+
+            <div class="past">
+                <h2>Past</h2>
+                <div>
+                    <h4 class="title">Mixed Recycling</h4>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <p class="components">Plastic, Glass, Metal, Paper, Cardboard</p>
+                </div>
+                <div>
+                    <h4 class="title">Compost</h4>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <p class="components">Organics, Food scraps, Yard Waste</p>
+                </div>
+                <div>
+                    <h4 class="title">Trash</h4>
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <p class="components">Landfill Waste</p>
+                </div>
+            </div>
+            
+        </div>
+            
+        <div class="help">
+            <h1>How can We help?</h1>
+            <p class="set-titles">Frequently asked Questions</p>
+            <div class="details">
+                <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                    <div>
+                        <p class="detail-name">Visit out help center</p>
+                        <p class="waste-type">Learn about waste management and how to use the app</p>
+                    </div>
+            </div>
+            <p class="set-titles">Tutorials</p>
+            <div class="details">
+                <i class="fa fa-play" aria-hidden="true"></i>
+                    <div>
+                        <p class="detail-name">Watch a tutorial</p>
+                        <p class="waste-type">Learn how to use the app and track your waste collection.</p>
+                    </div>
+            </div>
+            <p class="set-titles">Get in touch</p>
+            <div class="support">
+                    <div>
+                        <p class="detail-name">Contact support</p>
+                        <form action="">
+                            <textarea name="support" id="" cols="50" rows="10" placeholder="Describe your issue or question..."></textarea><br>
+                            <button type="submit" class="txt-btn">Submit</button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+</main>
 <footer>
-    <ul>
-        <li><a href="#">Company Info</a></li>
-        <li><a href="#">Support</a></li>
-        <li><a href="#">Terms of Service</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-    </ul>
-</footer>
-    
+    <div class="footerDiv">
+         <div>
+             <h3>Product and Services</h3>
+             <p><a href="#">Residential Trash Collection & Recycling</a></p>
+             <p><a href="#">Commercial Waste Disposal</a></p>
+             <p><a href="#">eWaste</a></p>
+             <p><a href="#">Education Resources</a></p>
+         </div>
+         <div>
+             <h3>Customer Support</h3>
+             <P><a href="#">Pay My Bill</a></P>
+             <P><a href="#">Manage My account</a></P>
+             <P><a href="#">Log iN to My Klin</a></P>
+             <P><a href="#">Customer Support</a></P>
+             <P><a href="#">Missed Pickup</a></P>
+             <P><a href="#">FAQ</a></P>
+         
+         </div>
+         <div>
+             <h3>Quick Info</h3>
+             <p><a href="#">Location</a></p>
+             <p><a href="#">Our Service Areas</a></p>
+         </div>
+         <div>
+             <h3>Our Company</h3>
+             <p><a href="#">Who We Are</a></p>
+             <p><a href="#">Why Klin</a></p>
+             <p><a href="#">Compliance & Ethics</a></p>
+             <p><a href="#">Sustainability Report</a></p>
+         </div>
+    </div>
+
+    <div class="socials">
+         
+         <a href="#"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+         <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+         <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+         <p><i class="fa fa-copyright" aria-hidden="true"></i>2024 Klin Holdings</p>
+     </div>
+ </footer>
+   
+ <script src="track.js"></script>
 </body>
 </html>

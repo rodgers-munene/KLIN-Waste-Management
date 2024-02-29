@@ -27,7 +27,7 @@ a{
     color: white;
 
 }
-button{
+.nav-bar button{
     padding: 4px 10px;
     border-radius: 10px;
     outline: none;
@@ -36,84 +36,218 @@ button{
     color: white;
 }
 
-.logo img{
-   padding: 5px 10px;
+.logo a img{
+   width: 100px;
+   height: 55px;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    justify-content: space-around;
+    column-gap: -10px;
+}
+.right{
+    grid-column: span 2;
+    position: relative;
+    overflow: hidden;
+}
+.left{
+    margin-top: 5vh;
+    height: 90vh;
+    border-right: 3px solid rgba(0, 0, 0, 0.6);
+}
+.left h3, .left p{
+    margin: 5px ;
+}
+.left p{
+    color: darkgray;
+}
+.left div{
+    padding: 10px;
+}
+.left div button{
+    margin: 10px auto;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: auto 10px;
+    text-align: left;
+    padding: 15px;    
 }
 
-main {
-    padding: 30px;
+.right h1{
+    margin: 5px auto;
 }
-.top{
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-
-}
-
-.track-pickup {
-    max-width: 600px;
-    margin: 0 auto;
-    position: fixed;
-}
-
-.track-pickup h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.pickup-details form {
-    margin-bottom: 250px;
-}
-
-.pickup-details label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.pickup-details input[type="text"],
-.pickup-details input[type="date"],
-.pickup-details button {
+.pickup-btn{
+    float: right;
+    margin-top: 5px;
     padding: 8px;
-    margin-bottom: 5px;
-}
-
-.pickup-details input[type="date"] {
-    width: 200px;
-}
-
-.pickup-details button {
-    background-color:darkolivegreen;
-    color: #fff;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
 }
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+.pickups{
     width: 100%;
 }
-
-footer ul {
-    list-style: none;
-    padding: 0;
+.upcoming{
+    width: 100%;
+}
+.upcoming h2, .past h2{
+    text-decoration: underline;
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.upcoming div, .past div{
+    margin: 15px auto;
+    width: 100%;
+    height: 55px;
+    cursor: pointer;
+}
+.components{
+    color: darkgray;
+}
+.upcoming .fa, .past .fa{
+    float: right;
+    font-size: 20px;
 }
 
-footer ul li {
-    display: inline-block;
+
+/* overview */
+.overview{
+    width: 100%;
+}
+.overview h1{
+    margin: 15px auto;
+
+}
+.state{
+    font-size: 23px;
+    font-weight: 700;
+}
+.details{
+    display: flex;
+    width: 100%;
+    height: 65px;
+}
+.date{
+    font-size: 20px;
+    font-weight: 600;
+}
+.details i{
+    width: 50px;
+    height: 50px;
+    padding: 12.5px;
+    font-size: 25px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+.details{
+    margin-top: 15px;
+    cursor: pointer;
+}
+.details div{
+    width: 100%;
+    margin-left: 10px;
+}
+.waste-type{
+    color: rgba(0, 0, 0, 0.7);
+}
+.status{
+    float: right;
     margin-right: 10px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 18px;
 }
 
-footer ul li:last-child {
-    margin-right: 0;
+/* help */
+
+
+.help i{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: lightgray;
+    border-radius: 5px;
 }
-.intro{
+textarea{
+    padding: 10px ;
+}
+.set-titles{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px auto;
+}
+.detail-name{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.txt-btn{
+    padding: 7px 15px;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    background-color: darkgray;
+    cursor: pointer;
+}
+.help, .pickups{
     position: absolute;
-    right: 0;
+    transform: translate(-100%);
+}
+.overview{
+    position: absolute;
+}
+#btn1{
+    background-color: lightgray;
 }
 
+
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: 50vh;
+    background-color: darkgreen;
+}
+.footerDiv{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 310px);
+    justify-content: space-evenly;
+}
+.footerDiv div h3{
+    margin-top: 13px;
+}
+.footerDiv div p{
+    margin-top: 13px;
+}
+.footerDiv div p a{
+    color: lightgray;
+}
+.footerDiv div p a:hover{
+    text-decoration: underline;
+}
+.socials{
+    width: 100%;
+    text-align: center;    
+}
+.socials i{
+    position: unset;
+    color: lightgray;
+    font-size: 20px;
+    margin: auto 5px;
+}
+.socials p{
+    color: lightgray;
+}
