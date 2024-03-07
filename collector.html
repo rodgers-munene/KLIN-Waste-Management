@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Pickup</title>
+    <link rel="stylesheet" href="collector.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+    <nav class="nav-bar">
+        <div class="logo">
+            <a href="index.php"><img src="./assets\LOGO.png"></a>
+        </div>
+        
+        <!-- <div style="color: white;" class="session">
+            <?php
+                    if(isset($_SESSION) && $_SESSION['username'] != ''){
+                echo "<i class=\"fa fa-user\" style=\"margin-right: 7px;\"></i>";
+                echo $_SESSION['username'];
+                echo "<div>";
+                echo "<button class=\"logout\" onclick=\"window.location.href='logout.php'\">" . "Logout" . "</button>";  
+                echo "</div>";
+                }else{
+                    echo "<button onclick=\"window.location.href='login.php'\">Login</button>";
+                }
+            ?>
+           </div>          -->
+    </nav>
+</header>
+
+<main>
+    <div class="left">
+        <h3>Pickups</h3>
+        <p>Manage your pickups</p>
+
+        <div>
+            <button id="btn1">Dashboard</button><br>
+            <button id="btn2">Pickups</button><br>
+        </div>
+    </div>
+    <div class="right">
+        <div class="dashboard">
+            <h1>Good Morning, Rodgers</h1>
+            <h3 class="state">Collector Info:</h4>
+            <h4 class="dash-title">Collector Id: </h4>
+            <p class="dash-info">230505</p>
+            <h4 class="dash-title">Name: </h4>
+            <p class="dash-info">Rodgers</p>
+            <h4 class="dash-title">Email:</h4>
+            <p class="dash-info">munenerodgers@gmail.com</p>
+            <h4 class="dash-title">Phone Number:</h4>
+            <p class="dash-info">0712345678</p>
+
+        </div>
+        <div class="pickups">
+                <p class="state"> Available pickups</p>
+
+                <div class="details"><i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <div style="position: relative;">
+                        <p class="date">Rodgers</p>
+                        <button class="status">Mark as collected</button>
+                        <p class="waste-type">Mixed Recycling</p>
+                        <div class="more-details">
+                            <div>
+                                <h4>User Email: </h4>
+                                <p>munenerodgers@gmail.com</p>
+                            </div>
+                            <div>
+                                <h4>Phone Number: </h4>
+                                <p>0712345678</p>
+                            </div>
+                            <div>
+                                <h4>Waste Type: </h4>
+                                <p>Compost waste</p>
+                            </div>
+                            <div>
+                                <h4>Street</h4>
+                                <p>Chania Bridge</p>
+                            </div>
+                            <div>
+                                <h4>House Number</h4>
+                                <p>28</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</main>
+<footer>
+    <ul>
+        <li><a href="#">Company Info</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+    </ul>
+</footer>
+ <script src="collector.js"></script>
+</body>
+</html>
