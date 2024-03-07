@@ -27,13 +27,28 @@ a{
     color: white;
 
 }
-.nav-bar button{
-    padding: 4px 10px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    background-color: blue;
-    color: white;
+button{
+    padding: 4px 15px;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    color: black;
+}
+.session{
+    cursor: pointer;
+    position: relative;
+}
+
+.logout{
+    width: 100%;
+    display: none;
+    position: absolute;
+}
+.logout:hover{
+    background-color: lightblue;
+}
+
+.session:hover .logout{
+    display: block;
 }
 
 .logo a img{
@@ -51,7 +66,11 @@ main{
 .right{
     grid-column: span 2;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
 }
 .left{
     margin-top: 5vh;

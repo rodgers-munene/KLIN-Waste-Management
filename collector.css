@@ -22,18 +22,30 @@ body{
     justify-content: space-between;
     font-size: 17px;
 }
-a{
-    text-decoration: none;
-    color: white;
 
+.session button{
+    padding: 4px 15px;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    color: black;
 }
-.nav-bar button{
-    padding: 4px 10px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    background-color: blue;
-    color: white;
+.session{
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+}
+
+.logout{
+    width: 100%;
+    display: none;
+    position: absolute;
+}
+.logout:hover{
+    background-color: lightblue;
+}
+
+.session:hover .logout{
+    display: block;
 }
 
 .logo a img{
@@ -172,12 +184,13 @@ main{
     background-color: lightgray;
 }
 
-/* more details  */
-
+/* details page  */
 .more-details{
     width: 100%;
-    transition: 2s;
     display: none;
+}
+.more-details div{
+    width: 100%;
 }
 .more-details div{
     display: flex;
@@ -188,14 +201,12 @@ main{
     margin-left: 10px;
 }
 
+/*  */
 footer {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
 }
 
@@ -208,8 +219,13 @@ footer ul li {
     display: inline-block;
     margin-right: 10px;
 }
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
 
 footer ul li:last-child {
     margin-right: 0;
 }
+
 

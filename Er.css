@@ -28,14 +28,28 @@ a{
 
 }
 button{
-    padding: 4px 10px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    background-color: blue;
-    color: white;
+    padding: 4px 15px;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    color: black;
+}
+.session{
+    cursor: pointer;
+    position: relative;
 }
 
+.logout{
+    width: 100%;
+    display: none;
+    position: absolute;
+}
+.logout:hover{
+    background-color: lightblue;
+}
+
+.session:hover .logout{
+    display: block;
+}
 .logo img{
    padding: 5px 10px;
 }
@@ -76,27 +90,39 @@ main {
     text-decoration: none;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+footer{
     width: 100%;
+    height: 50vh;
+    background-color: darkgreen;
 }
-
-footer ul {
-    list-style: none;
-    padding: 0;
+.footerDiv{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 310px);
+    justify-content: space-evenly;
 }
-
-footer ul li {
-    display: inline-block;
-    margin-right: 10px;
+.footerDiv div h3{
+    margin-top: 13px;
 }
-
-footer ul li:last-child {
-    margin-right: 0;
+.footerDiv div p{
+    margin-top: 13px;
+}
+.footerDiv div p a{
+    color: lightgray;
+}
+.footerDiv div p a:hover{
+    text-decoration: underline;
+}
+.socials{
+    width: 100%;
+    text-align: center;    
+}
+.socials i{
+    position: unset;
+    color: lightgray;
+    font-size: 20px;
+    margin: auto 5px;
+}
+.socials p{
+    color: lightgray;
 }
